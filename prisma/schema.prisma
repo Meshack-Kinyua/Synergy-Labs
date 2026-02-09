@@ -21,7 +21,7 @@ model Factory {
 
 model Order {
   id        String @id @default(uuid())
-  userId    String
+  userId   String
   factoryId String
-  status    String
+  status   String
 }
