@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 "name": "ai-pcb-factory",
 "private": true,
@@ -21,4 +22,29 @@
 "autoprefixer": "^10",
 "typescript": "^5"
 }
+=======
+{
+"name": "ai-pcb-factory",
+"private": true,
+"scripts": {
+"dev": "next dev",
+"build": "next build",
+"start": "next start"
+},
+"dependencies": {
+"next": "14.1.0",
+"react": "^18",
+"react-dom": "^18",
+"openai": "^4.0.0",
+"three": "^0.160.0",
+"@prisma/client": "^5.9.1"
+},
+"devDependencies": {
+"prisma": "^5.9.1",
+"tailwindcss": "^3.4.1",
+"postcss": "^8",
+"autoprefixer": "^10",
+"typescript": "^5"
+}
+>>>>>>> bc685a1 (initial)
 }
