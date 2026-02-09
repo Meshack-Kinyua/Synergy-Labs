@@ -1,6 +1,9 @@
 import DesignForm from '@/components/DesignForm'
 import Viewer from '@/components/Viewer'
 
+import SchematicEditor from '@/components/SchematicEditor'
+
+<SchematicEditor />
 
 export default function DesignPage() {
 return (

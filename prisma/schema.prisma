@@ -1,5 +1,27 @@
-model Design {
-id String @id @default(uuid())
-prompt String
-createdAt DateTime @default(now())
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    String @id @default(uuid())
+  email String @unique
+  role  String
+}
+
+model Factory {
+  id       String @id @default(uuid())
+  name     String
+  capacity Int
+}
+
+model Order {
+  id        String @id @default(uuid())
+  userId   String
+  factoryId String
+  status   String
 }
