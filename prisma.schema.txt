@@ -1,5 +1,0 @@
-model Design {
-id String @id @default(uuid())
-prompt String
-createdAt DateTime @default(now())
-}
